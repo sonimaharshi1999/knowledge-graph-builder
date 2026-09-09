@@ -1,0 +1,34 @@
+{
+  "project_name": "knowledge-graph-builder",
+  "title": "Knowledge Graph Builder",
+  "category": "knowledge-graph",
+  "difficulty": "advanced",
+  "description": "Extracts entities and relationships from text using NLP, builds queryable knowledge graph with NetworkX. Shortest path, PageRank, connected components. FastAPI REST API.",
+  "tech_stack": [
+    "networkx",
+    "nltk",
+    "fastapi",
+    "uvicorn",
+    "pydantic",
+    "numpy",
+    "httpx",
+    "pytest"
+  ],
+  "features": [
+    "NLP entity extraction",
+    "Relationship extraction",
+    "NetworkX graph",
+    "Graph queries: shortest path, PageRank",
+    "FastAPI REST API",
+    "Bulk ingestion"
+  ],
+  "test_status": "PASSED",
+  "sample_input": {
+    "description": "Text documents",
+    "example": "curl -X POST /ingest -d '{\"text\": \"John works at Google\"}'"
+  },
+  "sample_output": {
+    "description": "Graph query results",
+    "example": "{\"path\": [\"John\", \"works_at\", \"Google\"], \"entities\": 45}"
+  }
+}
