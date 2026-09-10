@@ -1,0 +1,89 @@
+======================================================================
+  Knowledge Graph Builder
+======================================================================
+
+Author: Maharshi Soni
+Category: knowledge-graph
+Difficulty: advanced
+
+----------------------------------------------------------------------
+DESCRIPTION
+----------------------------------------------------------------------
+Extracts entities and relationships from text using NLP, builds queryable knowledge graph with NetworkX. Shortest path, PageRank, connected components. FastAPI REST API.
+
+----------------------------------------------------------------------
+TECH STACK
+----------------------------------------------------------------------
+  - networkx
+  - nltk
+  - fastapi
+  - uvicorn
+  - pydantic
+  - numpy
+  - httpx
+  - pytest
+
+----------------------------------------------------------------------
+FEATURES
+----------------------------------------------------------------------
+  * NLP entity extraction
+  * Relationship extraction
+  * NetworkX graph
+  * Graph queries: shortest path, PageRank
+  * FastAPI REST API
+  * Bulk ingestion
+
+----------------------------------------------------------------------
+SAMPLE INPUT
+----------------------------------------------------------------------
+  Text documents
+
+  Example:
+    curl -X POST /ingest -d '{"text": "John works at Google"}'
+
+----------------------------------------------------------------------
+SAMPLE OUTPUT
+----------------------------------------------------------------------
+  Graph query results
+
+  Example:
+    {"path": ["John", "works_at", "Google"], "entities": 45}
+
+----------------------------------------------------------------------
+PROJECT STRUCTURE
+----------------------------------------------------------------------
+  .gitignore
+  LICENSE
+  project-idea.json
+  pytest.ini
+  README.md
+  requirements.txt
+  .github/workflows/test.yml
+  src/api.py
+  src/entity_extractor.py
+  src/graph_builder.py
+  src/knowledge_graph.py
+  src/main.py
+  src/models.py
+  src/nlp_utils.py
+  src/relationship_extractor.py
+  src/synthetic_data.py
+  src/__init__.py
+  tests/conftest.py
+  tests/test_api.py
+  tests/test_entity_extractor.py
+  tests/test_knowledge_graph.py
+  tests/test_relationship_extractor.py
+  tests/__init__.py
+
+----------------------------------------------------------------------
+TEST RESULTS
+----------------------------------------------------------------------
+  Status: PASSED
+  Tests Run: 25
+  Passed: 25
+  Failed: 0
+
+======================================================================
+  Author: Maharshi Soni  |  License: MIT
+======================================================================

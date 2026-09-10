@@ -1,5 +1,7 @@
 # Knowledge Graph Builder
 
+![Tests](https://github.com/sonimaharshi1999/knowledge-graph-builder/actions/workflows/test.yml/badge.svg) ![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue.svg) ![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
+
 **Extract and Query Knowledge from Unstructured Text**
 
 Built by Maharshi Soni | [MIT License](LICENSE)
@@ -239,6 +241,25 @@ python -m pytest tests/ -v --cov=src
 ```
 
 ---
+
+
+
+---
+
+## Sample Input / Output
+
+![Sample Input and Output](assets/io-card.png)
+
+---
+
+## Project Overview
+
+![Project Summary](assets/report-card.png)
+
+### Reports
+- [HTML Report](reports/knowledge-graph-builder-report.html) - interactive report
+- [PDF Report](reports/knowledge-graph-builder-report.pdf) - downloadable PDF
+- [TXT Report](reports/knowledge-graph-builder-report.txt) - plain text
 
 ## License
 
